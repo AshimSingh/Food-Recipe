@@ -1,0 +1,113 @@
+:root{
+    --background-color: #fff;
+    --background-light: #fff;
+    --shadow-color:rgba(0,0,0,0.2);
+    --primary-color:rgb(255,0,56);
+    --text-color:#0a0a0a;
+    --text-light:#575757;
+    --font-size:16px;
+    --amination-speed:1;
+}
+*{
+    margin: 0;
+    font-family: popins,sans-serif;
+    box-sizing: border-box;
+    
+}
+.margin{
+    margin: 0 40px;
+}
+
+
+.navbar{
+    height: 55px;
+    width: 100%;
+    box-shadow: 0 3px 6px var(--shadow-color);
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: space-between;
+    font-family: popins,sans-serif;
+    font-size: 1.2em;
+    align-items: center;
+    color: var(--text-color);
+    position: sticky;
+    z-index: 100;
+    transition: 0.2 ease-in;
+    .nav-item{
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+        }
+        .nav-item:hover{
+            color: var(--primary-color);
+        }
+    li{
+        margin: 0px 7px;
+    }
+    ul{
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+    
+}
+.active{
+    color: var(--primary-color);
+}
+}
+
+ .container{
+    padding-inline:20vw
+ }
+ .navTitle{
+    font-size: 25px;
+    font-weight: 700;
+    margin-left: 40px;
+    text-decoration: none;
+    color: #0a0a0a;
+    a,a:hover{
+        text-decoration: none;
+        color: #0a0a0a;
+    }
+    span{
+        color: var(--primary-color);
+    }
+ }
+ .menu{
+    display: none;
+ }
+ .menu:hover{
+    color: var(--primary-color);
+ }
+ .transparent-box{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index:99;
+    background-color: rgba(0,0,0,0.2);
+    display: none;
+ }
+
+ @media(max-width:'500px'){
+    .menu{
+        display: contents;
+    }
+    .navlist{
+        display: flex;
+        flex-direction: column;
+        top: 52px;
+        right: -300px;
+        z-index: 99;
+        height: 100vh;
+        width: 200px;
+        position: fixed;
+        background-color: var(--background-color);
+        margin: 4px 0px;
+    }
+ }
+ @import "../components/about.scss";
+ @import "../components/quote.scss";
+ @import "../components/chef.scss";
+ @import "../components/footer.scss";
+ @import "../components/suggestion.scss";

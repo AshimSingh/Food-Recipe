@@ -1,0 +1,62 @@
+
+.suggestion{
+    width: 70%;
+
+}
+.suggestionTopic{
+    display: flex;
+    justify-content: flex-start;
+}
+.buttonList{
+    display: flex;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    
+    // justify-content: space-between;
+}
+.btn-List{
+    margin: 5px;
+    padding: 8px 10px;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    background-color: var(--primary-color);
+    opacity: 0;
+    animation: 0.5s slideRight forwards;
+        @for $i from 2 through 14 {
+            &:nth-child(#{$i}) {
+                animation-delay: #{$i*0.1}s;
+            }
+        }
+}
+.searchBox{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    .sBox{
+        display: flex;
+        min-width: 300px;
+        width: 30%;
+        background-color: var(--primary-color);
+        input{
+            width: 85%;
+            height: 35px;
+            border-radius: 2px;
+        }
+        i{
+            font-size: 18px;
+            padding: 8px 10px;
+            cursor: pointer;
+        }
+        
+    }
+}
+@media(max-width:"756px"){
+    .searchBox{
+        .sBox {
+                min-width: 100px;
+                width: 95%;
+            }
+    }
+}
