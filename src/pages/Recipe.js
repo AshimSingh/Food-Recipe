@@ -1,8 +1,12 @@
 import React from 'react'
 import Suggestion from '../components/Suggestion'
+import RecipeList from '../components/recipeList'
 const Recipe = () => {
   return (
-    <Suggestion/>
+    <div>
+      <Suggestion/>
+      <RecipeList/>
+    </div>
   )
 }
 

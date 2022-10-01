@@ -1,0 +1,15 @@
+.recipeList{
+    background-color: green;
+    width: 70%;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.recipeBox{
+    width: 50%;
+    margin: 10px;
+    border-radius: 15px;
+    height: 300px;
+    min-width: 150px;
+    background-color: red;
+}
