@@ -1,15 +1,32 @@
+
 .recipeList{
-    background-color: green;
     width: 70%;
-    height: 80vh;
+    min-height: 80vh;
     display: flex;
     flex-wrap: wrap;
 }
 .recipeBox{
-    width: 50%;
-    margin: 10px;
-    border-radius: 15px;
-    height: 300px;
+    width: 30%;
+    cursor: pointer;
     min-width: 150px;
-    background-color: red;
+    margin: 10px;
+    border-radius: 5px;
+    height: 350px;
+    background-color: azure;
+    box-shadow:  8px 5px 5px #888888;
+    img{
+        border-top-left-radius:5px;
+        border-top-right-radius: 5px;
+        width: 100%;
+    }
+    h1{
+        margin: 10px 15px;
+        font-size: 25px;
+    }
+    p{
+        color: var(--text-light);
+        margin: 5px 15px;
+        font-size: 15px;
+    }
+    
 }

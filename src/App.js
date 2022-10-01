@@ -5,7 +5,7 @@ import Footer from './components/footer'
 import Recipe from './pages/Recipe'
 import Settings from './pages/Settings'
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
-function app() {
+function App() {
   return (
     <div>
       <BrowserRouter>
@@ -22,4 +22,4 @@ function app() {
   )
 }
 
-export default app
+export default App
