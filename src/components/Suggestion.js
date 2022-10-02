@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {useState} from 'react'
 const Suggestion = () => {
     const suggestionList=[
         "Pizza",
@@ -17,6 +17,12 @@ const Suggestion = () => {
         "Choila",
         "Ice Tea",
     ]
+    const [search,setSearch]=useState()
+    console.log(search)
+    const handelchange=(e)=>{
+      e.preventDefault()
+      console.log(search)
+    }
   return (
     <div className='chefBox'>
       <div className='suggestion margin'>
@@ -32,7 +38,12 @@ const Suggestion = () => {
         </div>
         <div className='searchBox'>
            <div className='sBox'> 
-                <input type="Text" placeholder="Search"></input>
+                <input type="Text" placeholder="Search"
+                  value={search}
+                  onchanged={handelchange}
+
+
+                ></input>
                 <i class="fa-solid fa-magnifying-glass"></i></div>
         </div>
       </div>
