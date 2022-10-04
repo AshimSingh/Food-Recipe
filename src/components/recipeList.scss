@@ -12,7 +12,6 @@
     margin: 10px;
     border-radius: 5px;
     height: 350px;
-    background-color: azure;
     box-shadow:  8px 5px 5px #888888;
     img{
         border-top-left-radius:5px;
@@ -29,4 +28,20 @@
         font-size: 15px;
     }
     
+}
+.fullRecipe{
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+    width: 70%;
+    img{
+        width: 50%;
+    }
+}
+@media(max-width:'500px'){
+    .fullRecipe{
+        img{
+            width: 100%;
+        }
+    }
 }

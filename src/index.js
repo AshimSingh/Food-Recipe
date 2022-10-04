@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDom from "react-dom"
-import App from "./app";
+import App from "./App";
 import './styles/index.scss'
 import 'bootstrap/dist/css/bootstrap.css';
 import 'jquery/dist/jquery.min.js'
