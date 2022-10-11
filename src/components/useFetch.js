@@ -1,4 +1,4 @@
-import React from "react";
+
 import {useState,useEffect} from 'react'
 export const useFetch=()=>{
     // const loading =[
@@ -14,7 +14,7 @@ export const useFetch=()=>{
     url: 'https://tasty.p.rapidapi.com/recipes/list',
     params: {from: '0', size: '20', tags: 'under_30_minutes'},
     headers: {
-        'X-RapidAPI-Key': '6283a2ba79mshf2d0e5236e14210p17ac3bjsn375fc800db28',
+        'X-RapidAPI-Key': 'd68de7f6camshe3304b937898240p152053jsnf41f0d144361',
         'X-RapidAPI-Host': 'tasty.p.rapidapi.com'
     }
     };

@@ -32,6 +32,16 @@
     }
     
 }
+.fullRecipe {
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+    width: 70%;
+
+    img {
+        width: 50%;
+    }
+}
 @media(max-width:'900px'){
     .recipeBox{
         width: 45%;
@@ -42,4 +52,9 @@
         width: 90%;
         min-width: 250px;
     }
+        .fullRecipe {
+            img {
+                width: 100%;
+            }
+        }
 }
