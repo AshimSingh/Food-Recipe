@@ -1,10 +1,8 @@
 import React from 'react'
-
+import Settingsblock from '../components/settingsblock'
 const Settings = () => {
   return (
-    <div>
-      This is Settings
-    </div>
+    <Settingsblock/>
   )
 }
 

@@ -1,0 +1,58 @@
+.settingsBody{
+    height: 90vh;
+}
+.settingsBlock{
+    width: 100%;
+    display: flex;
+    
+    justify-content: center;
+    flex-direction: column;
+}
+.block{
+    margin: 30px 0;
+    width: 70%;
+    
+}
+.sblock{
+    margin: 8px 0;
+    height: 80px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 8px var(--shadow-color);
+    border-left: 8px solid var(--primary-color) ;
+    padding: 7px 15px;
+    display: flex;
+    align-items: center;
+}
+.colorBox{
+    height: 60px;
+    margin: 0 15px;
+    width: 60px;
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+.colorBox:nth-child(2){
+    background-color: black;
+}
+.p{
+    .colorBox:nth-child(2) {
+            background-color: rgb(35, 148, 192);
+        }
+    .colorBox:nth-child(3) {
+            background-color: rgb(239, 239, 11);
+                }
+        .colorBox:nth-child(4) {
+            background-color: rgb(165, 11, 165);
+        }
+                .colorBox:nth-child(5) {
+                    background-color: rgb(38, 218, 38);
+                }
+}
+.sbtn{
+    background-color: var(--primary-color);
+    margin: 0 15px;
+    height: 40px;
+    border: none;
+    color:white;
+    font-weight: bold;
+    padding: 0 10px;
+}
