@@ -5,7 +5,7 @@
     --primary-color:rgb(255,0,56);
     --text-color:#0a0a0a;
     --text-light:#575757;
-    --font-size:16px;
+    --font-size:25px;
     --amination-speed:1;
 }
 *{
@@ -68,7 +68,7 @@
     color: #0a0a0a;
     a,a:hover{
         text-decoration: none;
-        color: #0a0a0a;
+        color: var(--text-color);
     }
     span{
         color: var(--primary-color);
