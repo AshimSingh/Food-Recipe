@@ -33,15 +33,6 @@ const Settingsblock = () => {
       size:"30px"
     }
   ]
-  useEffect(()=>{
-        const root = document.documentElement
-        for(let key in settings){
-          root.style.setProperty(key,settings[key])
-          // console.log(settings[key])
-        }
-  },[settings])
-
-
   const themes =[
     {
       "--background-color": "#fff",
@@ -61,6 +52,18 @@ const Settingsblock = () => {
     }
   ]
    const [theme,setTheme] =useState('light')
+
+
+
+   useEffect(()=>{
+        const root = document.documentElement
+        for(let key in settings){
+          root.style.setProperty(key,settings[key])
+          // console.log(settings[key])
+        }
+  },[settings])
+
+
    function changeTheme(i){
     const _themes = {...themes[i]}
     setTheme(i===0?"light":"dark")
@@ -71,10 +74,10 @@ const Settingsblock = () => {
     }
     setSettings(_settings)
    }
+
+
    function changeColor(i){
-    
-    const _color = primaryColor[i]
-    
+    const _color = primaryColor[i] 
     let _settings ={...settings}
     console.log(_settings["--primary-color"])
     // console.log(_color)
@@ -91,10 +94,11 @@ const Settingsblock = () => {
     
    
     _settings["--font-size"]=_fontsize.size
-    setSettings(_settings)
-    
+    setSettings(_settings) 
     setFont(i)
    }
+
+
   return (
     <div className='settingsBody'>
       <div className='chefBox'>
@@ -127,7 +131,7 @@ const Settingsblock = () => {
              <div className='colorBox'></div> */}
              {primaryColor.map((color,index)=>{
                 return(
-                    <div key={index} className='colorBox' style={{backgroundColor:color}} onClick={()=>changeColor(index)}>
+                    <div key={index} className='colorBox multicolor' style={{backgroundColor:color}} onClick={()=>changeColor(index)}>
                         {select===index && (
                             <i class="fa-solid fa-circle-check"></i>
                         )}

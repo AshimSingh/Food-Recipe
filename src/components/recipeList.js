@@ -4,8 +4,8 @@ import {useFetch} from "./useFetch"
 // import {useFetch} from './useFetch'
 const RecipeList = (result) => {
     
-    const{List}=useFetch()
-    console.log(List)
+    const{List}=useFetch() //custom hook
+    // console.log(List)
     
 //     const axios = require("axios");
 

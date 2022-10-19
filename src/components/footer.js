@@ -25,9 +25,9 @@ const Footer = () => {
       <div className='content'>
         <h3>Socials</h3>
         <div className='sub'>
-            <h5>Facebook</h5>
-            <h5>Instagram</h5>
-            <h5>Twitter</h5>
+            <a href='https://www.facebook.com/ashimjungthapa.98434' target="_blank"><h5>Facebook</h5></a>
+            <a href='https://www.instagram.com/ashim_singh_thapa/'><h5>Instagram</h5></a>
+            <a href='#'><h5>Twitter</h5></a>
         </div>
       </div>
       </div>

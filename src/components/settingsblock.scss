@@ -70,3 +70,24 @@
     font-weight: bold;
     padding: 0 10px;
 }
+@media(max-width:"564px"){
+    .sblock{
+        overflow: hidden;
+        align-content: space-between;
+    }
+    .sbtn{
+        font-size: 12px;
+        margin: 5px;
+    }
+    .multicolor{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        height: 40px;
+        i{
+            // margin-top: 20px;
+            font-size: 15px;
+        }
+    }
+}
